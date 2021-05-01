@@ -23,7 +23,7 @@ public class DBController {
 
     @RequestMapping("/test_db")
     public String test_DB_Connection(){
-        List<Candidate> listCandidates=candidateRepository.findAll();
+        List<Candidate> listCandidates=candidateRepository.findById();
         System.out.println(listCandidates);
         Candidate candidate=listCandidates.get(0);
         System.out.println(candidate.getName());

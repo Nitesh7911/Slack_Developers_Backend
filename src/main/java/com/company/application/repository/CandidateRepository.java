@@ -10,6 +10,6 @@ import java.util.List;
 @Repository
 public interface CandidateRepository extends JpaRepository<Candidate, Integer> {
 
-    @Query("select * from slack_developers.CANDIDATE_DETAILS")
-    List<Candidate> findAll();
+    @Query("select c from Candidate c where c.id=1")
+    List<Candidate> findById();
 }
