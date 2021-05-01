@@ -12,8 +12,8 @@ import java.util.List;
 @RestController
 public class DBController {
 
-    @Autowired
-    private CandidateRepository candidateRepository;
+//    @Autowired
+//    private CandidateRepository candidateRepository;
 
     @RequestMapping("/")
     public String test_application() {
