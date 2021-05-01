@@ -9,7 +9,7 @@ import java.awt.*;
 @Table(name="slack_developers.CANDIDATE_DETAILS")
 public class Candidate {
 
-   // @Id
+    @Id
     private Integer id;
 
     private String name;
