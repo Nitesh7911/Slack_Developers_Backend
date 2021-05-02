@@ -6,7 +6,7 @@ import javax.persistence.Table;
 import java.awt.*;
 
 @Entity
-@Table(name="slack_developers.CANDIDATE_DETAILS")
+@Table(name="CANDIDATE_DETAILS", schema="slack_developers")
 public class Candidate {
 
     @Id
