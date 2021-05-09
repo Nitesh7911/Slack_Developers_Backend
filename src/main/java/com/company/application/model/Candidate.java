@@ -1,5 +1,7 @@
 package com.company.application.model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -10,15 +12,30 @@ import java.awt.*;
 public class Candidate {
 
     @Id
+    @JsonProperty("id")
     private Integer id;
 
+    @JsonProperty("name")
     private String name;
+
+    @JsonProperty("age")
     private Integer age;
+
+    @JsonProperty("phone_number")
     private String phone_number;
+
+    @JsonProperty("email_id")
     private String email_id;
+
+    @JsonProperty("photo")
     private byte[] photo;
+
+    @JsonProperty("current_company")
     private String current_company;
+
+    @JsonProperty("opportunity")
     private String opportunity;
+
 
     public Integer getId() {
         return id;
