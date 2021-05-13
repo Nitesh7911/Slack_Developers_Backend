@@ -9,5 +9,5 @@ import org.springframework.stereotype.Repository;
 public interface CandidateRepository extends JpaRepository<Candidate, Integer> {
 
     @Query("select c from Candidate c where c.id=1")
-    Candidate findCandidate();
+    Candidate returnSingleCandidate();
 }
